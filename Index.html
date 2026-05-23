@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Engineering College Planner</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+
+<h2>
+Smart Engineering Student Portal
+</h2>
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Dashboard</a></li>
+<li><a href="#">Coding</a></li>
+<li><a href="#">Projects</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<button class="btn" onclick="openLogin()">
+Login
+</button>
+</nav>
+
+
+
+<!-- LOGIN POPUP -->
+
+<div class="login-popup" id="loginPopup">
+
+<div class="login-box">
+
+<span class="close-btn" onclick="closeLogin()">
+&times;
+</span>
+
+<h2>Student Login</h2>
+
+<div class="input-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input type="email" placeholder="Enter Email">
+
+</div>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input type="password" placeholder="Enter Password">
+
+</div>
+
+<button class="btn login-btn">
+Login
+</button>
+
+<div class="signup-text">
+
+Don't have an account?
+<span>
+Signup
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<!-- =========================
+PREMIUM HERO / HOME SECTION
+========================= -->
+
+<section class="hero">
+
+<!-- LEFT -->
+
+<div class="hero-left">
+
+<h1>
+Smart <span>Engineering College</span> Study Planner 🚀
+</h1>
+
+<p>
+Modern platform for engineering students to manage coding practice, notes, attendance, projects, semester planning and placement preparation in one dashboard.
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn">
+Get Started
+</button>
+
+<button class="hero-btn2">
+Explore Features
+</button>
+
+</div>
+
+<!-- HERO STATS -->
+
+<div class="hero-stats">
+
+<div class="hero-card">
+
+<h2>500+</h2>
+
+<p>Students</p>
+
+</div>
+
+<div class="hero-card">
+
+<h2>120+</h2>
+
+<p>Coding Problems</p>
+
+</div>
+
+<div class="hero-card">
+
+<h2>50+</h2>
+
+<p>Projects</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="hero-right">
+
+<div class="hero-image-box">
+
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+<!-- FLOATING CARDS -->
+
+<div class="floating-card card1">
+
+<i class="fa-solid fa-code"></i>
+
+<div>
+
+<h3>DSA Practice</h3>
+
+<p>75 Problems Solved</p>
+
+</div>
+
+</div>
+
+<div class="floating-card card2">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<div>
+
+<h3>Attendance</h3>
+
+<p>85% Present</p>
+
+</div>
+
+</div>
+
+<div class="floating-card card3">
+
+<i class="fa-solid fa-book"></i>
+
+<div>
+
+<h3>Study Notes</h3>
+
+<p>Semester Notes Ready</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DASHBOARD -->
+
+
+<section class="dashboard">
+
+<div class="title">
+
+<h1>Student Dashboard</h1>
+
+<p class="sub-title">
+Track your engineering progress smartly
+</p>
+
+</div>
+
+<!-- TOP CARDS -->
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<div class="icon-box">
+<i class="fa-solid fa-book"></i>
+</div>
+
+<h2>08</h2>
+
+<p>Total Subjects</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<div class="icon-box">
+<i class="fa-solid fa-file-circle-check"></i>
+</div>
+
+<h2>12</h2>
+
+<p>Assignments</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<div class="icon-box">
+<i class="fa-solid fa-code"></i>
+</div>
+
+<h2>145</h2>
+
+<p>Problems Solved</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<div class="icon-box">
+<i class="fa-solid fa-chart-line"></i>
+</div>
+
+<h2>85%</h2>
+
+<p>Attendance</p>
+
+</div>
+
+</div>
+
+<!-- PROGRESS -->
+
+<div class="progress-section">
+
+<div class="progress-card">
+
+<h2>Semester Progress</h2>
+
+<div class="progress-item">
+
+<div class="progress-text">
+<span>DSA</span>
+<span>75%</span>
+</div>
+
+<div class="progress-bar">
+<div class="progress-fill" style="width:75%"></div>
+</div>
+
+</div>
+
+<div class="progress-item">
+
+<div class="progress-text">
+<span>DBMS</span>
+<span>65%</span>
+</div>
+
+<div class="progress-bar">
+<div class="progress-fill" style="width:65%"></div>
+</div>
+
+</div>
+
+<div class="progress-item">
+
+<div class="progress-text">
+<span>Web Development</span>
+<span>90%</span>
+</div>
+
+<div class="progress-bar">
+<div class="progress-fill" style="width:90%"></div>
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="activity-card">
+
+<h2>Recent Activities</h2>
+
+<div class="activity">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<p>
+Completed DSA Assignment
+</p>
+
+</div>
+
+<div class="activity">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<p>
+Uploaded DBMS Notes
+</p>
+
+</div>
+
+<div class="activity">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<p>
+Solved 5 LeetCode Problems
+</p>
+
+</div>
+
+<div class="activity">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<p>
+Attended Web Development Lab
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- EXTRA STATS -->
+
+<div class="extra-stats">
+
+<div class="extra-card">
+
+<i class="fa-solid fa-fire"></i>
+
+<h2>25 Days</h2>
+
+<p>Coding Streak</p>
+
+</div>
+
+<div class="extra-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h2>1500</h2>
+
+<p>Contest Rating</p>
+
+</div>
+
+<div class="extra-card">
+
+<i class="fa-solid fa-medal"></i>
+
+<h2>10</h2>
+
+<p>Certificates</p>
+
+</div>
+
+<div class="extra-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h2>08</h2>
+
+<p>Mini Projects</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="profile" id="profile">
+
+<div class="title">
+
+<h1>Student Profile</h1>
+
+<p class="sub-title">
+Smart Engineering Student Dashboard
+</p>
+
+</div>
+
+<div class="profile-container">
+
+<!-- LEFT SIDE -->
+
+<div class="profile-left">
+
+<div class="profile-image-box">
+
+<img id="profileImg"
+src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+
+<div class="online-dot"></div>
+
+</div>
+
+<h2 id="profileName">
+Neha Malviya
+</h2>
+
+<h3 id="profileBranch">
+Computer Science Engineer
+</h3>
+
+<p id="profileBio">
+Frontend Developer • Coding Enthusiast • Tech Learner 🚀
+</p>
+
+<div class="profile-buttons">
+
+<button class="btn" onclick="updateProfile()">
+Save Profile
+</button>
+
+<button class="follow-btn">
+Follow
+</button>
+
+</div>
+
+<!-- STATS -->
+
+<div class="profile-stats">
+
+<div class="stat-card">
+
+<h2 id="cgpaText">8.7</h2>
+
+<p>CGPA</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="problemText">145</h2>
+
+<p>Problems</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="projectText">08</h2>
+
+<p>Projects</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="profile-right">
+
+<h2>Edit Student Details</h2>
+
+<div class="input-group">
+
+<input type="text" id="nameInput"
+placeholder="Enter Full Name">
+
+<input type="text" id="branchInput"
+placeholder="Enter Branch">
+
+</div>
+
+<div class="input-group">
+
+<input type="text" id="bioInput"
+placeholder="Enter Bio">
+
+<input type="number" id="cgpaInput"
+placeholder="Enter CGPA">
+
+</div>
+
+<div class="input-group">
+
+<input type="number" id="problemInput"
+placeholder="Problems Solved">
+
+<input type="number" id="projectInput"
+placeholder="Projects">
+
+</div>
+
+<input type="text" id="imageInput"
+placeholder="Paste Profile Image URL">
+
+<!-- SKILLS -->
+
+<h2 class="skill-title">
+Skills
+</h2>
+
+<div class="skills">
+
+<div class="skill-box">
+<i class="fa-brands fa-html5"></i>
+<p>HTML</p>
+</div>
+
+<div class="skill-box">
+<i class="fa-brands fa-css3-alt"></i>
+<p>CSS</p>
+</div>
+
+<div class="skill-box">
+<i class="fa-brands fa-js"></i>
+<p>JavaScript</p>
+</div>
+
+<div class="skill-box">
+<i class="fa-brands fa-python"></i>
+<p>Python</p>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-code"></i>
+<p>DSA</p>
+</div>
+
+<div class="skill-box">
+<i class="fa-solid fa-laptop-code"></i>
+<p>Projects</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+PREMIUM CODING SECTION
+========================= -->
+
+<section class="coding">
+
+<div class="title">
+<h1>Coding Practice Zone</h1>
+<p class="sub-title">
+Improve your coding skills with daily practice & contests
+</p>
+</div>
+
+<div class="coding-container">
+
+<!-- CARD 1 -->
+
+<div class="coding-card">
+
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop">
+
+<div class="coding-content">
+
+<h2>DSA Practice</h2>
+
+<p>
+Solve arrays, linked lists, trees, graphs and dynamic programming problems.
+</p>
+
+<div class="progress-box">
+
+<h4>Progress 75%</h4>
+
+<div class="progress-bar">
+<div class="progress-fill" style="width:75%"></div>
+</div>
+
+</div>
+
+<button class="btn">
+Start Practice
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="coding-card">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop">
+
+<div class="coding-content">
+
+<h2>Web Development</h2>
+
+<p>
+Learn HTML, CSS, JavaScript, React and Node.js projects.
+</p>
+
+<div class="progress-box">
+
+<h4>Progress 65%</h4>
+
+<div class="progress-bar">
+<div class="progress-fill" style="width:65%"></div>
+</div>
+
+</div>
+
+<button class="btn">
+Explore Now
+</button>
+
+</div>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="coding-card">
+
+<img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop">
+
+<div class="coding-content">
+
+<h2>Mini Projects</h2>
+
+<p>
+Build real-world engineering projects for placements and resume.
+</p>
+
+<div class="progress-box">
+
+<h4>Progress 85%</h4>
+
+<div class="progress-bar">
+<div class="progress-fill" style="width:85%"></div>
+</div>
+
+</div>
+
+<button class="btn">
+View Projects
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CODING STATS -->
+
+<div class="coding-stats">
+
+<div class="stat-box">
+
+<i class="fa-solid fa-fire"></i>
+
+<h2>25 Days</h2>
+
+<p>Coding Streak</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h2>145</h2>
+
+<p>LeetCode Problems</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-ranking-star"></i>
+
+<h2>1500</h2>
+
+<p>Contest Rating</p>
+
+</div>
+
+<div class="stat-box">
+
+<i class="fa-solid fa-code"></i>
+
+<h2>8</h2>
+
+<p>Mini Projects</p>
+
+</div>
+
+</div>
+
+<!-- =========================
+PREMIUM ABOUT SECTION
+========================= -->
+
+<section class="about">
+
+<div class="title">
+
+<h1>About Our Engineering Portal</h1>
+
+<p class="sub-title">
+Smart digital platform specially designed for engineering students
+</p>
+
+</div>
+
+<div class="about-container">
+
+<!-- LEFT IMAGE -->
+
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+<!-- RIGHT CONTENT -->
+
+<div class="about-content">
+
+<h2>
+Build Your Future With Smart Learning 🚀
+</h2>
+
+<p>
+Our Engineering College Study Planner helps students manage coding practice, semester notes, attendance, projects, assignments and placement preparation in one modern platform.
+</p>
+
+<p>
+This portal is specially created for B.Tech students to improve productivity, coding skills and academic performance using a smart digital dashboard.
+</p>
+
+<!-- FEATURES -->
+
+<div class="feature-box">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-code"></i>
+
+<div>
+
+<h3>Coding Practice</h3>
+
+<p>
+Daily DSA and programming challenges
+</p>
+
+</div>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-book"></i>
+
+<div>
+
+<h3>Study Notes</h3>
+
+<p>
+Semester wise notes and resources
+</p>
+
+</div>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<div>
+
+<h3>Performance Tracking</h3>
+
+<p>
+Track attendance and learning progress
+</p>
+
+</div>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<div>
+
+<h3>Projects & Placement</h3>
+
+<p>
+Build projects and prepare for placements
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<button class="btn">
+Explore More
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+CODING PLATFORMS SECTION
+ADD BELOW CODING SECTION
+========================= -->
+
+<section class="platforms">
+
+<div class="title">
+<h1>Coding Platforms</h1>
+</div>
+
+<div class="platform-box">
+
+<div class="platform-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h2>LeetCode</h2>
+
+<p>
+Practice DSA problems and improve coding skills daily.
+</p>
+
+<a href="https://leetcode.com/" target="_blank">
+
+<button class="btn">
+Visit LeetCode
+</button>
+
+</a>
+
+</div>
+
+<div class="platform-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h2>HackerRank</h2>
+
+<p>
+Solve coding challenges and improve programming concepts.
+</p>
+
+<a href="https://www.hackerrank.com/" target="_blank">
+
+<button class="btn">
+Visit HackerRank
+</button>
+
+</a>
+
+</div>
+
+<div class="platform-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h2>CodeChef</h2>
+
+<p>
+Participate in coding contests and improve contest rating.
+</p>
+
+<a href="https://www.codechef.com/" target="_blank">
+
+<button class="btn">
+Visit CodeChef
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PREMIUM CONTACT SECTION
+ADD BEFORE FOOTER
+========================= -->
+
+<section class="contact">
+
+<div class="title">
+
+<h1>Contact Us</h1>
+
+<p class="sub-title">
+Get in touch with our engineering support team
+</p>
+
+</div>
+
+<div class="contact-container">
+
+<!-- LEFT -->
+
+<div class="contact-info">
+
+<h2>
+Let's Connect 🚀
+</h2>
+
+<p>
+Feel free to contact us for project help, coding guidance, placement preparation and engineering notes.
+</p>
+
+<div class="info-box">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<h3>Address</h3>
+
+<p>
+Bhopal Engineering College, Madhya Pradesh
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<h3>Phone</h3>
+
+<p>
++91 9876543210
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<h3>Email</h3>
+
+<p>
+enggplanner@gmail.com
+</p>
+
+</div>
+
+</div>
+
+<div class="social-contact">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-linkedin-in"></i>
+
+<i class="fa-brands fa-github"></i>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="contact-form">
+
+<input type="text" placeholder="Enter Full Name">
+
+<input type="email" placeholder="Enter Email">
+
+<input type="text" placeholder="Enter Subject">
+
+<textarea placeholder="Write Your Message"></textarea>
+
+<button class="btn">
+Send Message
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<!-- LOGO -->
+
+<div class="footer-box">
+
+<div class="footer-logo">
+
+<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
+
+<h2>
+TechVerse
+</h2>
+
+</div>
+
+<p>
+Smart Engineering Student Portal for coding, notes, attendance, projects and placement preparation.
+</p>
+
+<div class="footer-social">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-linkedin-in"></i>
+
+<i class="fa-brands fa-github"></i>
+
+</div>
+
+</div>
+
+<!-- QUICK LINKS -->
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Dashboard</a></li>
+
+<li><a href="#">Coding</a></li>
+
+<li><a href="#">Projects</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+<!-- FEATURES -->
+
+<div class="footer-box">
+
+<h3>Features</h3>
+
+<ul>
+
+<li><a href="#">Coding Practice</a></li>
+
+<li><a href="#">Study Notes</a></li>
+
+<li><a href="#">Attendance</a></li>
+
+<li><a href="#">Placement Prep</a></li>
+
+<li><a href="#">Mini Projects</a></li>
+
+<li><a href="#">Resume Builder</a></li>
+
+</ul>
+
+</div>
+
+<!-- NEWSLETTER -->
+
+<div class="footer-box">
+
+<h3>Newsletter</h3>
+
+<p>
+Subscribe for latest coding updates and engineering notes.
+</p>
+
+<div class="newsletter">
+
+<input type="email" placeholder="Enter Email">
+
+<button>
+Subscribe
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- BOTTOM -->
+
+<div class="footer-bottom">
+
+<p>
+© 2026 TechVerse | Designed By Neha 🚀
+</p>
+
+</div>
+
+</footer>
+
+<!-- BACK TO TOP -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+<script src="script.js"></script>
+
+</body>
+</html>
